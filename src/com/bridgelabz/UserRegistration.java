@@ -4,16 +4,16 @@ import java.util.Scanner;
 public class UserRegistration {
 
 	public static void main(String[] args) {
-		//As a User need to a valid Last Name
+		//As a User need to a valid Email ID
 		Scanner scan = new Scanner (System.in);
 		int ch = 1;
 		do {
-		System.out.println("Enter Your Last Name: ");
-		String l_name = scan.next();
+		System.out.println("Enter Your Email: ");
+		String Email = scan.next();
 		
-		String regex = "^{1}[A-Z]+[a-z]";
+		String regex = "^[A-Za-z0-9+_.-]+@(.+)$";
 		Pattern p = Pattern.compile(regex);
-		Matcher m = p.matcher(l_name);
+		Matcher m = p.matcher(Email);
 		
 		if (m.find()) {
 			System.out.println("Match found");
