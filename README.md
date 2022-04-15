@@ -9,10 +9,11 @@ UserEmailUC3 ::: In this case, As a user need to enter a valid 'Email Address' E
 
 UserMonileUC4 ::: In this case, User has need to follow pre-defined format for entering the Mobile Number. It must be country code in prefix with following the mobile numbers.
 
-UserPasswordUC5 ::: This repository for User case 5, 6, 7 and 8. In this case, The program has derived for User need to have follow pre-defined password rules. 
-Password/Rules No.1 = It has Minimum 8 charecters.
-Password/Rules No.2 = It Should have at least 1 Upper Case.
-Password/Rules No.3 = It Should have at least 1 numeric number in the password.
+UserPasswordUC5 ::: This repository for User case 5, 6, 7 and 8. In this case, The program has derived for User need to have follow pre-defined password rules.
+
+Password/Rules No.1 = It has Minimum 8 charecters.                                                                                                                       
+Password/Rules No.2 = It Should have at least 1 Upper Case.                                                                                                               
+Password/Rules No.3 = It Should have at least 1 numeric number in the password.                                                                                           
 Password/Rules No.3 = It Has exactly 1 Special Character.
 
 EmailSamplesUC6 ::: In this program, There are some validate email samples for users.
