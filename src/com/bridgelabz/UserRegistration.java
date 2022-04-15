@@ -4,16 +4,20 @@ import java.util.Scanner;
 public class UserRegistration {
 
 	public static void main(String[] args) {
-		//As a User need to a follow predefined mobile number format
+		//As a User need to a follow predefined Unique Password format.
 		Scanner scan = new Scanner (System.in);
 		int ch = 1;
 		do {
-		System.out.println("Enter Your Mobile Number: ");
-		String MobNumber = scan.next();
+		System.out.println("Enter Your Unique Password: ");
+		String password = scan.next();
 		
-		String regex = ("(0/91)?[7-9][0-9]{9}");
+		//Compiling the regex
+		String regex = "^(?=.*[0-9])"
+				+ "(?=.*[a-z])(?=.*[A-Z])"
+                + "(?=.*[@#$%^&+=])"
+                + "(?=\\S+$).{8,20}$";
 		Pattern p = Pattern.compile(regex);
-		Matcher m = p.matcher(MobNumber);
+		Matcher m = p.matcher(password);	
 		
 		if (m.find()) {
 			System.out.println("Match found");
@@ -29,7 +33,3 @@ public class UserRegistration {
 		while(ch==1);	
 	}
 }
-
-//(0/91): number starts with (0/91)  
-//[7-9]: starting of the number may contain a digit between 0 to 9  
-//[0-9]: then contains digits 0 to 9
