@@ -4,6 +4,9 @@ import java.util.Scanner;
 public class UserRegistration {
 
 	public static void main(String[] args) {
+		
+		System.out.println("*****Welcome to the User Registration Form********");
+
 		//As a User need to a valid First Name
 		Scanner scan = new Scanner (System.in);
 		int ch = 1;
