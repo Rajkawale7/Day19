@@ -7,7 +7,7 @@ LastNameUC2 ::: In this case, As a user need to enter a valid 'Last Name' as fol
 
 UserEmailUC3 ::: In this case, As a user need to enter a valid 'Email Address' E.g. abc.xyz@bl.co.in - Email has 3 mandatory parts (abc, bl & co) and 2 optional (xyz in) with precise @ and . positions.
 
-UserMonileUC4 ::: In this case, User has need to follow pre-defined format for entering the Mobile Number. It must be country code in prefix with following the mobile numbers.
+UserMobbileUC4 ::: In this case, User has need to follow pre-defined format for entering the Mobile Number. It must be country code in prefix with following the mobile numbers.
 
 UserPasswordUC5 ::: This repository for User case 5, 6, 7 and 8. In this case, The program has derived for User need to have follow pre-defined password rules.
 
